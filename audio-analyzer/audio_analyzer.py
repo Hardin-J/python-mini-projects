@@ -21,6 +21,7 @@ import csv
 from pathlib import Path
 import wave
 from contextlib import closing
+from argparse import ArgumentParser
 
 
 # -------- CONFIG --------
@@ -98,6 +99,30 @@ def scan_audio_files(directory: Path):
             "duration_sec": duration_sec
         }
 
+def arg_parser():
+    """
+    Placeholder for future argument parsing.
+    Currently not implemented.
+    """
+    parser = ArgumentParser(description="Audio Metadata Analyzer")
+
+    parser.add_argument(
+        "--input_dir",
+        type=str,
+        default=str(INPUT_DIR),
+        help="Directory containing audio files to analyze"
+    )
+
+    parser.add_argument(
+        "--report_file",
+        type=str,
+        default=REPORT_FILE,
+        help="Output CSV report file"
+    )
+
+    return parser.parse_args()
+
+
 
 # -------- MAIN FUNCTION --------
 
@@ -154,4 +179,9 @@ def generate_report():
 
 
 if __name__ == "__main__":
+    args = arg_parser()
+
+    INPUT_DIR = Path(args.input_dir)
+    REPORT_FILE = args.report_file
+    
     generate_report()
