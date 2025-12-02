@@ -20,7 +20,7 @@ import csv
 # ---------- CONSTANTS ----------
 AUDIO_EXTENSIONS = {".wav", ".mp3", ".flac", ".ogg", ".m4a"}
 DEFAULT_INPUT_DIR = Path("input_audio")
-LOG_FILE = "audio-file-renamer/rename_log.txt"
+LOG_FILE = "rename_log.txt"
 MAPPING_FILE = "rename_mapping.csv"
 
 
@@ -126,28 +126,28 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Audio File Batch Renamer")
 
     parser.add_argument(
-        "--input",
+        "--input","-i",
         type=str,
         default=str(DEFAULT_INPUT_DIR),
         help="Input folder containing audio files"
     )
 
     parser.add_argument(
-        "--prefix",
+        "--prefix","-p",
         type=str,
         required=True,
         help="Prefix for renamed files (e.g., speaker1)"
     )
 
     parser.add_argument(
-        "--start",
+        "--start","-s",
         type=int,
         default=1,
         help="Start index for renaming (default = 1)"
     )
 
     parser.add_argument(
-        "--apply",
+        "--apply","-a",
         action="store_true",
         help="Actually apply renaming (otherwise dry-run)"
     )

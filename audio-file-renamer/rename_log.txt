@@ -1,0 +1,18 @@
+2025-12-01 22:02:40 | [Dry Run] Would rename: 'speaker1_001.wav' -> 'audio_01..wav'
+2025-12-01 22:02:40 | [Dry Run] Would rename: 'speaker1_002.mp3' -> 'audio_02..wav'
+2025-12-01 22:02:40 | [Dry Run] Would rename: 'speaker1_003.wav' -> 'audio_03..wav'
+2025-12-01 22:02:40 | Renaming process completed in directory: input_audio
+2025-12-01 22:03:30 | [Dry Run] Would rename: 'speaker1_001.wav' -> 'audio_01.wav'
+2025-12-01 22:03:30 | [Dry Run] Would rename: 'speaker1_002.mp3' -> 'audio_02.wav'
+2025-12-01 22:03:30 | [Dry Run] Would rename: 'speaker1_003.wav' -> 'audio_03.wav'
+2025-12-01 22:03:30 | Renaming process completed in directory: input_audio
+2025-12-01 22:04:01 | Renamed: 'speaker1_001.wav' -> 'audio_01.wav'
+2025-12-01 22:04:01 | Renamed: 'speaker1_002.mp3' -> 'audio_02.wav'
+2025-12-01 22:04:01 | Renamed: 'speaker1_003.wav' -> 'audio_03.wav'
+2025-12-01 22:04:01 | Renaming process completed in directory: input_audio
+2025-12-01 22:07:02 | Files already renamed with prefix 'audio' in directory: input_audio
+2025-12-01 22:22:35 | Found 3 audio files in input_audio
+2025-12-01 22:22:35 | RENAMED: audio_01.wav -> audio_pad_001.wav
+2025-12-01 22:22:35 | RENAMED: audio_02.wav -> audio_pad_002.wav
+2025-12-01 22:22:35 | RENAMED: audio_03.wav -> audio_pad_003.wav
+2025-12-01 22:22:35 | Renaming process completed.
